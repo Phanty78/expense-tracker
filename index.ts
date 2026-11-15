@@ -56,7 +56,21 @@ if (expenses.length >= 1) {
 if (argv[2] !== undefined) {
     const command: string  = argv[2]
     switch (command) {
-        case "add":       
+        case "add":
+            if (argv[3] === "--description") {
+                if (typeof(argv[4]) === "string") {
+                    const cleanedArgv: string = argv[4].trim()
+                    if (cleanedArgv !== "") {
+                        // finir les conditions
+                    } else {
+                        console.log("The description cannot be empty.")
+                    }
+                } else {
+                    console.log("The description must be a string.")
+                }
+            } else {
+                console.log("When adding an expense, the --description option must be present.")
+            }
             break;
         case "list":
             displayExpenses()
