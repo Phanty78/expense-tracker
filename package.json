@@ -1,19 +1,19 @@
 {
-  "name": "expense-tracker",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "expense-tracker": "bun run index.ts",
-    "typecheck": "bun check",
-    "format": "bun run biome format --write",
-    "lint": "bun run biome lint --write"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.6.8",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^7"
-  }
+	"name": "expense-tracker",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"expense-tracker": "bun run index.ts",
+		"typecheck": "bun check",
+		"format": "bun run biome format --write",
+		"lint": "bun run biome lint --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.6.8",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^7"
+	}
 }
